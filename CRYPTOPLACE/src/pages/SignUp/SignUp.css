@@ -1,0 +1,275 @@
+.signup {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 450px;
+    background: linear-gradient(rgba(84, 3, 255, 0.15), rgba(105, 2, 153, 0.15));
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.signup-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.signup-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.signup-header p {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #e3e3e3;
+}
+
+.form-group input {
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid #3c3c3c;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #7927ff;
+}
+
+.form-group input::placeholder {
+    color: #666;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.form-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    accent-color: #7927ff;
+    cursor: pointer;
+}
+
+.form-checkbox label {
+    font-size: 13px;
+    color: #b3b3b3;
+    line-height: 1.4;
+}
+
+.form-checkbox label span {
+    color: #7927ff;
+    cursor: pointer;
+}
+
+.form-checkbox label span:hover {
+    text-decoration: underline;
+}
+
+.signup-btn {
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background: #7927ff;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.signup-btn:hover {
+    background: #6310f0;
+}
+
+.signup-divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #666;
+    font-size: 13px;
+}
+
+.signup-divider::before,
+.signup-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #3c3c3c;
+}
+
+.social-signup {
+    display: flex;
+    gap: 15px;
+}
+
+.social-btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #3c3c3c;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: #7927ff;
+}
+
+.social-btn span {
+    font-weight: bold;
+}
+
+.social-btn.google span {
+    color: #ea4335;
+}
+
+.social-btn.github span {
+    color: #fff;
+}
+
+.login-link {
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.login-link span {
+    color: #7927ff;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.login-link span:hover {
+    text-decoration: underline;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    border: 2px solid #7927ff;
+    animation: scaleIn 0.3s ease;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.modal-content h2 {
+    font-size: 28px;
+    color: #7927ff;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    color: #e3e3e3;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.modal-redirect {
+    color: #888 !important;
+    font-size: 14px !important;
+    margin-top: 20px !important;
+}
+
+.modal-loader {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #3c3c3c;
+    border-top-color: #7927ff;
+    border-radius: 50%;
+    margin: 20px auto 0;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@media (max-width: 500px) {
+    .signup-container {
+        padding: 30px 20px;
+    }
+    
+    .signup-header h1 {
+        font-size: 26px;
+    }
+    
+    .social-signup {
+        flex-direction: column;
+    }
+}

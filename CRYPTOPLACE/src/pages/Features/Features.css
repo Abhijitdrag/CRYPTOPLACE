@@ -1,0 +1,119 @@
+.features {
+    padding: 0 20px;
+    padding-bottom: 100px;
+}
+
+.features-header {
+    max-width: 600px;
+    margin: 80px auto;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.features-header h1 {
+    font-size: max(4vw, 36px);
+    margin-bottom: 20px;
+}
+
+.features-header p {
+    color: #e3e3e3;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.features-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    background: linear-gradient(rgba(84, 3, 255, 0.15), rgba(105, 2, 153, 0.15));
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(121, 39, 255, 0.2);
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.feature-card p {
+    color: #b3b3b3;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.features-cta {
+    max-width: 600px;
+    margin: 80px auto 0;
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, rgba(121, 39, 255, 0.2), rgba(84, 3, 255, 0.1));
+    border-radius: 20px;
+}
+
+.features-cta h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.features-cta p {
+    color: #e3e3e3;
+    margin-bottom: 25px;
+}
+
+.features-cta button {
+    border: none;
+    background: #7927ff;
+    color: white;
+    font-size: 16px;
+    padding: 12px 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.features-cta button:hover {
+    background: #6310f0;
+}
+
+@media (max-width: 900px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-card {
+        padding: 25px;
+    }
+    
+    .features-cta {
+        padding: 30px 20px;
+    }
+    
+    .features-cta h2 {
+        font-size: 24px;
+    }
+}

@@ -7,3 +7,15 @@
     padding: 15px 0px;
     font-size: 13px;
 }
+
+.footer .developer
+{
+    margin-top: 8px;
+    color: #888;
+}
+
+.footer .developer span
+{
+    color: #7927ff;
+    font-weight: 500;
+}
