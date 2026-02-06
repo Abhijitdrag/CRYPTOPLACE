@@ -51,7 +51,6 @@ const Home = () => {
           </form>
         </div>
         <div className='crypto-table'>
-          <div className="practice"></div>
           <div className="table-layout">
             <p>#</p>
             <p>Coins</p>
